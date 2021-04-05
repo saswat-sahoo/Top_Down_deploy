@@ -5,7 +5,7 @@ var socket;
 let player;
 
 function setup() {
-    socket = io.connect('http://localhost:2000');
+    socket = io.connect(window.location.hostname);
 
     createCanvas(windowWidth, windowHeight);
     size = 1;
